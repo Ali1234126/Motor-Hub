@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 body{
-    background: linear-gradient(#1111116b, #22222200),url('car.jpeg');
+    background: linear-gradient(#080707a8, #2222228a),url('car.jpeg');
     background-repeat: no-repeat;
     background-size: 100%;
    
@@ -81,10 +81,10 @@ header ul a:hover,.active{
     margin-top: 5px;
 }
 .intro-content b{
-    color:#ffffff9a;
+    color:#fff;
 }
 .intro-content li{
-    color:black;
+    color:#ffffffa6;
 }
 footer{
     display: flex;
@@ -122,4 +122,30 @@ footer{
 div:hover .hover-text{
   opacity: 1;
 
+}
+@media (max-width:950px){
+   .intro,footer{
+    flex-direction: column;
+    justify-content: center;
+   }
+   .intro-content , .intro-image{
+    width: 80%;
+   }
+   .image1 .hover-text{
+      font-size: 15px;
+   }
+   .image2 .hover-text{
+    font-size: 12px;
+ }
+ .image3 .hover-text{
+    font-size: 25px;
+ }
+ header{
+    flex-direction: column;
+    justify-content: center;
+ }
+ nav{
+    align-items: center;
+    margin-left: 100px;
+ }
 }
