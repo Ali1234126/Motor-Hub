@@ -1,70 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <title>Motor Hub</title>
-  </head>
-  <body >
-    <header>
-      <a href="#index.html" >
-        <img src="logo.png" alt="car" class="logo">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="index.html" target="_blank" class="active">Home</a></li>
-          <li><a href="index1.html" target="_blank">Store</a></li>
-          <li><a href="index2.html" target="_blank">Location</a></li>
-          <li><a href="index3.html" target="_blank">Events</a></li>
-        </ul>
-      </nav>
-    </header>
-      <section class="intro">
-        <div class="intro-content">
-          <h1>Welcome to our Car Repair and Management Services Website</h1>
-          <p>We are here to make your vehicle maintenance experience easier 
-            by providing comprehensive information about genuine spare parts
-            and the nearest repair centers. We believe every car deserves 
-            the right care and support, so we offer you an easy-to-use 
-            platform to help you make informed decisions about your 
-            car maintenance.</p>
-          <h2>Features of Our Website:</h2>
-          <ul>
-              <li><b>Easy Access:</b> Easily search for the spare parts you need without hassle.</li>
-              <li><b>Repair Locations:</b> Discover the nearest authorized repair centers in your area.</li>
-              <li><b>Comprehensive Information:</b> Get accurate and up-to-date information on maintenance services and available offers.</li>
-          </ul>
-          <p>We are here to assist you every step of the way, making your car maintenance experience smoother and safer.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Zone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <h2 class="logo"><span>CAR</span>ZONE</h2>
+    <i id="btnMenu" class="fa-solid fa-bars" id="btnMenu"></i>
+    <nav class="navigation">
+      <a href="index.html">Home</a>
+      <a href="store.html">Store</a>
+      <a href="location.html">Location</a>
+      <a href="event.html">Event</a>
+      <button class="btnLogin">Login</button>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <span class="icon-close">
+      <i class="fa-solid fa-xmark"></i>
+    </span>
+    <div class="from-box login">
+      <h2>Login</h2>
+      <form action="">
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" placeholder=" "  />
+          <label>Email</label>
         </div>
-        <div class="intro-image">
-          <img src="Car Repair.png" alt="Car Repair">
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" placeholder=" "  />
+          <label>Password</label>
         </div>
-        </section>
-  <footer>
-    <div class="image1">
-      <a href="index1.html">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRldZs7xwPkwJ1dEYddD3O9G7yD0NkVMfVGNg&s">
-      </a>
-        <p class="hover-text">Visit our store for amazing products</p>
+        <div class="remember-forget">
+          <label><input type="checkbox" />Remember me</label>
+          <a href="#">Forget Password?</a>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>
+            Don't have an account?
+            <a href="#" class="register-link">Register</a>
+          </p>
+        </div>
+      </form>
     </div>
-    <div class="image2">
-      <a href="index2.html">
-        <img src="https://play-lh.googleusercontent.com/dbEpQZuIqHOW9y68_qM6_EgIRHN74fyyoaSxQaQxY36RaWd2Xv05GOnkA-2y3PHJt0w">            
-      </a>
-      <p class="hover-text">Find us at our convenient location</p>
+    <div class="from-box register">
+      <h2>Registeration</h2>
+      <form action="">
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-user"></i>
+          </span>
+          <input type="text" placeholder=" " required />
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <input type="email" placeholder=" "  required />
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input type="password" placeholder=" " required />
+          <label>Password</label>
+        </div>
+        <div class="remember-forget">
+          <label><input type="checkbox" />
+            I agree to the terms & condition
+          </label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>
+            Already have an account?
+            <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </form>
     </div>
-    <div class="image3">
-         <a href="index3.html">
-          <img src="https://res.cloudinary.com/simpleview/image/upload/v1664987183/clients/texas/discoverdenton_Instagram_3163_ig_18149046172184896_938dfe6c-f02c-4626-ac96-ba2b906eed74.jpg"> 
-         </a>
-         <p class="hover-text">Join us for exciting events</p>
-    </div>
-  </footer>
+  </div>
+
+  
   <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
